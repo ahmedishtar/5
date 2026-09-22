@@ -46,7 +46,8 @@ function hostFail() {
 function hostAlready() {
   var m = document.getElementById("msgs");
   if (m) {
-    m.innerHTML = "تم تشغيل التهكير بالفعل ...";
+    m.innerHTML = "تم تشغيل التهكير بالفعل ..."
+       m.style.color = "yellow";
   }
 }
 
