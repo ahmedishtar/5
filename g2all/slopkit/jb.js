@@ -30,22 +30,23 @@ const STOP_BEFORE_DOUBLE = params.get("stop") === "beforedouble";
 function hostOk() {
   var m = document.getElementById("msgs");
   if (m) {
-    m.innerHTML = "GoldHEN v2.4b18.12 Loaded ...";
+  m.innerHTML = "GoldHEN v2.4b18.12 تم تفعيل التعديل بنجاح ..."
+    m.style.color = "green" ;
   }
 }
 
 function hostFail() {
   var m = document.getElementById("msgs");
   if (m) {
-    m.innerHTML = "Failed to Load! Restart Your Console ...";
-    m.style.color = "yellow";
+    m.innerHTML = "فشل تشغيل التهكير ... الرجاء اطفاء وتشغيل الجهاز والدخول مجددا ...";
+    m.style.color = "red";
   }
 }
 
 function hostAlready() {
   var m = document.getElementById("msgs");
   if (m) {
-    m.innerHTML = "GoldHEN is Already Loaded ...";
+    m.innerHTML = "تم تشغيل التهكير بالفعل ...";
   }
 }
 
@@ -197,7 +198,7 @@ let allDone = false,
       var m = document.getElementById("msgs");
       if (m) {
         m.innerHTML =
-          'No offsets for this firmware: <span style="color: red;">' +
+          'لا يوجد ملف تهكير لهذا الاصدار , حدث الجهاز لاصدار اعلى: <span style="color: red;">' +
           (key || "Unknown") +
           "</span>";
       }
