@@ -38,7 +38,7 @@ function hostOk() {
 function hostFail() {
   var m = document.getElementById("msgs");
   if (m) {
-    m.innerHTML = "فشل تشغيل التهكير ... الرجاء اطفاء وتشغيل الجهاز والدخول مجددا ...";
+    m.innerHTML = "فشل التشغيل .. الرجاء اطفاء وتشغيل الجهاز والمحاولة مجدداً ...";
     m.style.color = "red";
   }
 }
